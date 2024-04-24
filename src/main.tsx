@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Login from './pages/login.tsx'
+import NeedHelp from './pages/need-help.tsx'
 
 import './index.css'
 
@@ -30,10 +31,16 @@ const theme = extendTheme({
   },
 })
 
+// TODO: add private page layout to separate logged in pages from public pages
+// This could be done by applying a "private page provider" outside of the private pages, that would have a HOC that would check if the user is logged in
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Login />,
+  },
+  {
+    path: "/need-help",
+    element: <NeedHelp />,
   },
 ]);
 

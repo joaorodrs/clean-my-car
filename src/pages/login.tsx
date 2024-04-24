@@ -65,6 +65,8 @@ function Login() {
           top={4}
           fontWeight="medium"
           color="gray.900"
+          as="a"
+          href="/need-help"
         >
           Need help?
         </Button>
