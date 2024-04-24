@@ -101,6 +101,7 @@ function Login() {
             <Input {...register("password")} type="password" placeholder="Enter your password" />
             <FormErrorMessage>{errors.password?.message}</FormErrorMessage>
             <Button
+              as="a"
               variant="link"
               color="gray.800"
               fontSize="14px"
@@ -108,6 +109,7 @@ function Login() {
               mt={2}
               w="100%"
               justifyContent="flex-end"
+              href="/forgot-password"
             >
               forgot password?
             </Button>

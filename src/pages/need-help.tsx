@@ -16,7 +16,7 @@ function NeedHelp() {
         leftIcon={<ArrowBackIcon />}
         href="/"
       >
-        back to login
+        Back to login
       </Button>
       <Box w="100%" h="30%" bgColor="brand.500" display="flex" alignItems="center" justifyContent="center">
         <Text fontSize="3xl" fontWeight="semibold">How can we help you?</Text>

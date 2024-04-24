@@ -4,6 +4,7 @@ import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Login from './pages/login.tsx'
 import NeedHelp from './pages/need-help.tsx'
+import ForgotPassword from './pages/forgot-password.tsx'
 
 import './index.css'
 
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/need-help",
     element: <NeedHelp />,
+  },
+  {
+    path: "/forgot-password",
+    element: <ForgotPassword />,
   },
 ]);
 
